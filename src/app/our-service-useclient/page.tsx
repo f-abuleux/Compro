@@ -1,5 +1,7 @@
+'use client'
 
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 async function getData() {
       const response = await fetch('https://cdn.contentful.com/spaces/cbvu2jwtumbq/environments/master/entries?access_token=SuzRdqXHbxJuPajgxaJu0FL3V0OJLWCy84fsU1KErbM', {
@@ -34,10 +36,12 @@ export default async function OurServicePage() {
       return (
             <div className="p-5 gap-5 overflow-x-clip" id='our-service-page'>
                   <h1 className='text-[48px] text-left m-5 lg:pl-20 sm:pl-14 font-[NeueMontreal]' id='/#service-servicepage'>SERVICE</h1>
-                  <p className='text-center p-5 font-[NeueMontreal]'>Semua kebutuhan digital Anda terpenuhi di sini</p>
+                  <p className='text-center p-5 font-[NeueMontreal] text-[20px]'>Semua kebutuhan digital Anda terpenuhi di sini</p>
                   <div>
-                        <div className='grid lg:grid-cols-3 sm-grid-cols-2 gap-5 items-center justify-center place-content-center m-8 lg:m-20' id='webdevelopment-servicepage'
-
+                        <motion.div className='grid lg:grid-cols-3 sm-grid-cols-2 gap-5 items-center justify-center place-content-center m-8 lg:m-20' id='webdevelopment-servicepage'
+                              initial={{ opacity: 0, translateY: 20 }}
+                              transition={{ duration: 0.5, ease: "easeInOut" }}
+                              whileInView={{ opacity: 1, translateY: 0 }}
                         >
                               <div className='flex lg:justify-end justify-center'>
                                     <img src="/image/formicingoding.png"
@@ -56,8 +60,11 @@ export default async function OurServicePage() {
                                           className='bg-slate-800 text-yellow-50 rounded-[32px] mb-5 sm:m-0 py-5 px-10 font-[NeueMontreal] origin-center hover:bg-yellow-50 hover:text-slate-800 ease-in-out duration-300'
                                     >MORE</Link>
                               </div>
-                        </div>
-                        <div className='grid lg:grid-cols-3 sm-grid-cols-2 gap-5 items-center justify-center place-content-center m-8 lg:m-20' id='brandidentity-servicepage'
+                        </motion.div>
+                        <motion.div className='grid lg:grid-cols-3 sm-grid-cols-2 gap-5 items-center justify-center place-content-center m-8 lg:m-20' id='brandidentity-servicepage'
+                              initial={{ opacity: 0, translateY: 20 }}
+                              transition={{ duration: 0.5, ease: "easeInOut" }}
+                              whileInView={{ opacity: 1, translateY: 0 }}
                         >
                               <div className='flex lg:justify-end justify-center'>
                                     <img src='/image/brandidentity.png'
@@ -77,9 +84,11 @@ export default async function OurServicePage() {
                                           className='bg-slate-800 text-yellow-50 rounded-[32px] mb-5 sm:m-0 py-5 px-10 font-[NeueMontreal] origin-center hover:bg-yellow-50 hover:text-slate-800 ease-in-out duration-300'
                                     >MORE</Link>
                               </div>
-                        </div>
-                        <div className='grid lg:grid-cols-3 sm-grid-cols-2 gap-5 items-center justify-center place-content-center m-8 lg:m-20' id='visualdesign-servicepage'
-
+                        </motion.div>
+                        <motion.div className='grid lg:grid-cols-3 sm-grid-cols-2 gap-5 items-center justify-center place-content-center m-8 lg:m-20' id='visualdesign-servicepage'
+                              initial={{ opacity: 0, translateY: 20 }}
+                              transition={{ duration: 0.5, ease: "easeInOut" }}
+                              whileInView={{ opacity: 1, translateY: 0 }}
                         >
                               <div className='flex lg:justify-end justify-center'>
                                     <img src="https://miro.medium.com/v2/resize:fit:1024/1*WI-1j92eWvtYSUfTvi7VBw.png"
@@ -99,8 +108,11 @@ export default async function OurServicePage() {
                                           className='bg-slate-800 text-yellow-50 rounded-[32px] mb-5 sm:m-0 py-5 px-10 font-[NeueMontreal] origin-center hover:bg-yellow-50 hover:text-slate-800 ease-in-out duration-300'
                                     >MORE</Link>
                               </div>
-                        </div>
-                        <div className='grid lg:grid-cols-3 sm-grid-cols-2 gap-5 items-center justify-center place-content-center m-8 lg:m-20' id='photography-servicepage'
+                        </motion.div>
+                        <motion.div className='grid lg:grid-cols-3 sm-grid-cols-2 gap-5 items-center justify-center place-content-center m-8 lg:m-20' id='photography-servicepage'
+                              initial={{ opacity: 0, translateY: 20 }}
+                              transition={{ duration: 0.5, ease: "easeInOut" }}
+                              whileInView={{ opacity: 1, translateY: 0 }}
                         >
                               <div className='flex lg:justify-end justify-center'>
                                     <img src="https://images.news18.com/ibnlive/uploads/2021/08/sun-photo.jpg"
@@ -119,7 +131,7 @@ export default async function OurServicePage() {
                                           className='bg-slate-800 text-yellow-50 rounded-[32px] mb-5 sm:m-0 py-5 px-10 font-[NeueMontreal] origin-center hover:bg-yellow-50 hover:text-slate-800 ease-in-out duration-300'
                                     >MORE</Link>
                               </div>
-                        </div>
+                        </motion.div>
                   </div>
             </div>
       )
