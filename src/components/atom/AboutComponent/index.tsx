@@ -1,13 +1,15 @@
+'use client'
+
 import React from "react";
 import FetchingServerHome from "../fetching-rendering-home";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 export default function AboutushomeComponent() {
       return (
             <div className='justify-center'>
                   <motion.div className='mt-60  sm:mt-48' id='aboutushome'
-                        initial={{ opacity: 0, translateY: 50 }}
-                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        initial={{ opacity: 0, translateY: 20 }}
+                        transition={{ duration: 0.2, ease: "easeInOut" }}
                         whileInView={{ opacity: 1, translateY: 0 }}
                   >
                         <FetchingServerHome />
@@ -31,7 +33,8 @@ export default function AboutushomeComponent() {
                               <motion.p className="text-gray-700 p-5 text-[24px] font-[NeueMontreal]"
                                     initial={{ opacity: 0, translateX: 20 }}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    whileInView={{ opacity: 1, translateX: 0 }}>
+                                    whileInView={{ opacity: 1, translateX: 0 }}
+                              >
                                     <b className='font-bold font-[NeueMontreal]'>Meningkatkan kredibilitas dan kepercayaan</b> pelanggan terhadap brand Anda melalui strategi digital yang efektif.
                               </motion.p>
                         </div>

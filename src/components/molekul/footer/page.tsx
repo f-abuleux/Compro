@@ -1,6 +1,7 @@
-"use client"
+'use client'
 
 import Image from "next/image";
+import React from "react";
 import { motion } from "framer-motion";
 
 
@@ -8,23 +9,21 @@ const FooterHomePage = () => {
         return (
                 <div className="">
                         <div className="flex-col sm:flex-row sm:flex gap-[15px] lg:gap-[80px]  sm:gap-[20px] text-center font-[NeueMontreal] items-center  justify-center mt-[100px] text-slate-800 font-bold ">
-                                <motion.div className="flex justify-center sm:hidden"
-                                        initial={{ scale: 1 }}
-                                        whileTap={{ scale: 0.9 }}
+                                <div className="flex justify-center sm:hidden"
                                 >
                                         <Image src="/logo/formici.svg" alt=""
                                                 width={150}
                                                 height={100}
                                         />
-                                </motion.div>
+                                </div>
                                 <motion.a href="https://www.behance.net/farosabdillah"
-                                        initial={{ scale: 1 }}
+                                        initial={{ scale: 1}}
                                         whileTap={{ scale: 0.9 }}
                                 >BEHANCE</motion.a>
                                 <motion.div>EMAIL</motion.div>
                                 <motion.a href="https://www.linkedin.com/in/mfarraosabdillah/"
-                                        initial={{ scale: 1 }}
-                                        whileTap={{ scale: 0.9 }}
+                                                                        initial={{ scale: 1}}
+                                                                        whileTap={{ scale: 0.9 }}
                                 >LINKED</motion.a>
                                 <Image src="/logo/formici.svg" alt=""
                                         width={150}
@@ -32,18 +31,18 @@ const FooterHomePage = () => {
                                         className="flex  justify-center sm:visible invisible"
                                 />
                                 <motion.a href="https://www.instagram.com/m.farraos/"
-                                className="flex justify-center"
-                                        initial={{ scale: 1 }}
+                                        className="flex justify-center"
+                                        initial={{ scale: 1}}
                                         whileTap={{ scale: 0.9 }}
                                 >INSTAGRAM</motion.a>
                                 <motion.a href="https://discord.com/users/333825723297038338"
-                                className="flex justify-center"
-                                        initial={{ scale: 1 }}
+                                        className="flex justify-center"
+                                        initial={{ scale: 1}}
                                         whileTap={{ scale: 0.9 }}
                                 >DISCORD</motion.a>
                                 <motion.a href="https://github.com/f-abuleux"
-                                className="flex justify-center"
-                                        initial={{ scale: 1 }}
+                                        className="flex justify-center"
+                                        initial={{ scale: 1}}
                                         whileTap={{ scale: 0.9 }}
                                 >GITHUB</motion.a>
                         </div>

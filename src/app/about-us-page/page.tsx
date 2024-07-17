@@ -1,6 +1,5 @@
 
 import FetchingServerAboutus from "@/components/atom/fetching-rendering-aboutus";
-import { motion } from "framer-motion";
 
 export const metadata = {
       title: "About Us - Formici",
