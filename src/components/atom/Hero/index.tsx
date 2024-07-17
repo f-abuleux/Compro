@@ -8,9 +8,10 @@ import { motion } from 'framer-motion'
 export default function HeroGue() {
       return (
             <div className=' overflow-x-clip items-center '>
-                  <div className=" flex-row lg:h-screen h-[100vh] sm:h-89 sm:mx-[150px] : lg:mx-[350px] mt-[10px] items-center ">
+                  <Image src="/bg-cover.png" alt="hero"  width={2000} height={90} className='absolute -z-20 object-fill bg-cover'  />
+                  <div className=" flex-row lg:h-screen  h-[20vh]sm:h-[100vh] sm:h-89 sm:mx-[150px] : lg:mx-[350px] mt-[10px] items-center ">
                         <div className=" text-center justify-center ">
-                              <motion.p className='font-[NeueMontreal] p-10 mt-16'
+                              <motion.p className='font-[NeueMontreal] p-2 md:p-10 '
                                     initial={{ opacity: 0, translateY: 20 }}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
                                     whileInView={{ opacity: 1, translateY: 0 }}
@@ -22,14 +23,14 @@ export default function HeroGue() {
                                     <div className="flex justify-center"
                                     >
                                           <Image
-                                                className='p-7'
+                                                className='p-2 sm:p-7'
                                                 src="/logo/formici.svg" alt="hero"
                                                 width={200}
                                                 height={500}
                                           />
                                     </div>
                               </motion.div>
-                              <motion.p className='p-5 font-[Meditative] text-[32px] justify-center'
+                              <motion.p className='p-2 sm:p-5 font-[Meditative] text-[20px]  md:text-[32px]  justify-center'
                                     initial={{ opacity: 0, translateY: 20 }}
                                     transition={{ duration: 1, ease: "easeInOut" }}
                                     whileInView={{ opacity: 1, translateY: 0 }}
