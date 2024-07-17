@@ -42,6 +42,8 @@ export default async function DetailService({ params }: any) {
                         <h1 className="text-[16px] text-justify " >{documentToReactComponents(jsonData2?.items[0]?.fields?.description)}</h1>
                         <h1 className="m-10 text-[20px] text-center font-bold font-[NeueMontreal]"> With us</h1>
                         <h1 className="m-10 text-[20px] text-center font-bold font-[NeueMontreal]"> Only Rp.{jsonData2?.items[0]?.fields?.price},-</h1>
+                        <a href="/our-service-useclient" className="p-2 font-[NeueMontreal]"> BACK TO SERVICE</a>
+                        <a href="/" className="p-2 font-[NeueMontreal]"> HOME</a>
                         <div className="text-wrap">
                         </div>
                   </div>
