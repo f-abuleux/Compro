@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 
 export default function FetchingServerTeam() {
       const [data, setData] = useState<any[]>([]);
 
       const fetchData = async () => {
-            const resp = await fetch('https://randomuser.me/api/?results=10');
+            const resp = await fetch('https://randomuser.me/api/?results=20');
 
             if (resp.ok) {
                   const data = await resp.json();
@@ -23,7 +24,11 @@ export default function FetchingServerTeam() {
             <div className="grid place-content-center sm:grid-cols-2 sm:p-5 lg:px-36 lg:py-10 font-[NeueMontrealMed] font-medium  gap-5" >
                   {
                         data.map((item: any, index: any) => (
-                              <div key={index} className="flex flex-col sm:flex-row w-[275px] sm:w-[350px] lg:w-[600px] sm:place-content-center sm:justify-center sm:items-center items-center " >
+                              <motion.div key={index} className="flex flex-col sm:flex-row w-[275px] sm:w-[350px] lg:w-[600px] sm:place-content-center sm:justify-center sm:items-center items-center " 
+                              initial={{ opacity: 0, translateY: 20 }}
+                              transition={{ duration: 0.5, ease: "easeInOut" }}
+                              whileInView={{ opacity: 1, translateY: 0 }}
+                              >
                                     <img src={item.picture.large}
                                           width={"100px"}
                                           height={"100px"}
@@ -37,7 +42,7 @@ export default function FetchingServerTeam() {
                                           <p className="font-[NeueMontreal] px-5 text-[16px]">{item.phone}</p>
 
                                     </div>
-                              </div>
+                              </motion.div>
                         ))}
             </div>
       )

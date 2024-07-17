@@ -49,16 +49,6 @@ body {
 
 @layer base {
   @font-face {
-    font-family: 'NeueMontrealMed';
-    font-style: medium;
-    font-weight: 400;
-    font-display: "neuemontreal";
-    src: url(/NeueMontreal-Medium.otf) format('opentype');
-  }
-}
-
-@layer base {
-  @font-face {
     font-family: 'Meditative';
     font-style: bold;
     font-weight: 400;
