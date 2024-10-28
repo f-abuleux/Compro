@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 export default function HeroGue() {
       return (
             <div className='overflow-x-clip items-center'>
-                  <Image src="/bg-cover-formici.webp" alt="hero" width={2000} height={90} className='absolute z-0 object-fill bg-cover top-0 filter grayscale-[70%] backdrop-blur-sm' />
+                  <Image src="/bg-cover.png" alt="hero" width={2000} height={90} className='absolute z-0 object-fill bg-cover top-0 filter grayscale-[70%] backdrop-blur-sm' />
                   <div className="flex-row lg:h-screen h-[20vh] sm:h-[100vh] sm:h-89 sm:mx-[150px] lg:mx-[350px] mt-[10px] items-center z-20 relative top-10">
                         <div className="text-center justify-center">
                               <motion.p className='font-[NeueMontreal] p-2 md:p-10'
