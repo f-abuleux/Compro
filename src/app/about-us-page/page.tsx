@@ -9,7 +9,7 @@ export const metadata = {
 
 const AboutUsPage = () => {
       return (
-            <div className="">
+            <div className=" bg-white">
                   <h1 className="text-[48px] text-left lg:m-10 lg:pl-20 sm:m-5 sm:pl-10 m-2 pl-5 font-[NeueMontreal]">ABOUT US.</h1>
                   <div className="p-5 grid lg:grid-cols-2 lg:gap-28 lg:px-60 sm:px-28"
                   >

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function AboutushomeComponent() {
       return (
-            <div className='justify-center'>
+            <div className='justify-center '>
                   <motion.div className='mt-60  sm:mt-48' id='aboutushome'
                         initial={{ opacity: 0, translateY: 20 }}
                         transition={{ duration: 0.2, ease: "easeInOut" }}

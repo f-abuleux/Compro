@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <nav className="sticky top-0  z-20 bg-white/50 backdrop-blur-sm " >
+        <nav className="sticky top-0  z-30 bg-slate-50/30 backdrop-blur-sm " >
             <div className='flex justify-between relative w-full '>
                 <div className='p-4 flex-1 items-center flex'>
                     <Link href="#" className="flex items-center">

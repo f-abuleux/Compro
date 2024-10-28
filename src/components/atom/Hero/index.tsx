@@ -8,11 +8,11 @@ import { motion } from 'framer-motion'
 
 export default function HeroGue() {
       return (
-            <div className=' overflow-x-clip items-center '>
-                  <Image src="/bg-cover-formici.webp" alt="hero"  width={2000} height={90} className='absolute -z-20 object-fill bg-cover'  />
-                  <div className=" flex-row lg:h-screen  h-[20vh]sm:h-[100vh] sm:h-89 sm:mx-[150px] : lg:mx-[350px] mt-[10px] items-center ">
-                        <div className=" text-center justify-center ">
-                              <motion.p className='font-[NeueMontreal] p-2 md:p-10 '
+            <div className='overflow-x-clip items-center'>
+                  <Image src="/bg-cover-formici.webp" alt="hero" width={2000} height={90} className='absolute z-0 object-fill bg-cover top-0 filter grayscale-[70%] backdrop-blur-sm' />
+                  <div className="flex-row lg:h-screen h-[20vh] sm:h-[100vh] sm:h-89 sm:mx-[150px] lg:mx-[350px] mt-[10px] items-center z-20 relative top-10">
+                        <div className="text-center justify-center">
+                              <motion.p className='font-[NeueMontreal] p-2 md:p-10'
                                     initial={{ opacity: 0, translateY: 20 }}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
                                     whileInView={{ opacity: 1, translateY: 0 }}
@@ -21,8 +21,7 @@ export default function HeroGue() {
                                     initial={{ opacity: 0, translateY: 20 }}
                                     transition={{ duration: 0.75, ease: "easeInOut" }}
                                     whileInView={{ opacity: 1, translateY: 0 }}>
-                                    <div className="flex justify-center"
-                                    >
+                                    <div className="flex justify-center">
                                           <Image
                                                 className='p-2 sm:p-7'
                                                 src="/logo/formici.svg" alt="hero"
@@ -31,7 +30,7 @@ export default function HeroGue() {
                                           />
                                     </div>
                               </motion.div>
-                              <motion.p className='p-2 sm:p-5 font-[Meditative] text-[20px]  md:text-[32px]  justify-center'
+                              <motion.p className='p-2 sm:p-5 font-[Meditative] text-[20px] md:text-[32px] justify-center'
                                     initial={{ opacity: 0, translateY: 20 }}
                                     transition={{ duration: 1, ease: "easeInOut" }}
                                     whileInView={{ opacity: 1, translateY: 0 }}
@@ -47,7 +46,7 @@ export default function HeroGue() {
                                     whileInView={{ opacity: 1, translateY: 0 }}
                               >
                                     <Link href="#aboutushome" className='
-            bg-slate-800 p-5 rounded-[28px] font-[NeueMontreal] text-yellow-50 hover:bg-yellow-50 hover:text-slate-800 duration-500 ease-in-out  '>START YOUR JOURNEY</Link>
+            bg-slate-800 p-5 rounded-[28px] font-[NeueMontreal] text-yellow-50 hover:bg-yellow-50 hover:text-slate-800 duration-500 ease-in-out'>START YOUR JOURNEY</Link>
                               </motion.div>
                         </div>
                   </div>

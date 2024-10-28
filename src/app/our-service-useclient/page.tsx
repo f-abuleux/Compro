@@ -34,7 +34,7 @@ export default async function OurServicePage() {
 
 
       return (
-            <div className="p-5 gap-5 overflow-x-clip" id='our-service-page'>
+            <div className="p-5 gap-5 overflow-x-clip bg-white" id='our-service-page'>
                   <h1 className='text-[48px] text-left m-5 lg:pl-20 sm:pl-14 font-[NeueMontreal]' id='/#service-servicepage'>SERVICE</h1>
                   <p className='text-center p-5 font-[NeueMontreal] text-[20px]'>Semua kebutuhan digital Anda terpenuhi di sini</p>
                   <div>
