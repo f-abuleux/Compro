@@ -12,6 +12,7 @@
 html {
   scroll-behavior: smooth;
   animation: ease-in-out;
+  background-color: #f4f4f4;
 }
 
 body {
