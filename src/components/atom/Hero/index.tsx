@@ -5,10 +5,11 @@ import Link from 'next/link'
 import React from 'react'
 import { motion } from 'framer-motion'
 
+
 export default function HeroGue() {
       return (
             <div className=' overflow-x-clip items-center '>
-                  <Image src="/bg-cover.png" alt="hero"  width={2000} height={90} className='absolute -z-20 object-fill bg-cover'  />
+                  <Image src="/bg-cover-formici.webp" alt="hero"  width={2000} height={90} className='absolute -z-20 object-fill bg-cover'  />
                   <div className=" flex-row lg:h-screen  h-[20vh]sm:h-[100vh] sm:h-89 sm:mx-[150px] : lg:mx-[350px] mt-[10px] items-center ">
                         <div className=" text-center justify-center ">
                               <motion.p className='font-[NeueMontreal] p-2 md:p-10 '
@@ -34,7 +35,7 @@ export default function HeroGue() {
                                     initial={{ opacity: 0, translateY: 20 }}
                                     transition={{ duration: 1, ease: "easeInOut" }}
                                     whileInView={{ opacity: 1, translateY: 0 }}
-                              >DIGITALISASI SERTA MEMPERLUAS JARINGAN DENGAN MEMPERKANALAN “ART” YANG ANDA MILIKI KE DUNIA DIGITAL.</motion.p>
+                              >DIGITALISASI SERTA MEMPERLUAS JARINGAN DENGAN MEMPERKANALAN “ART” YANG ANDA MILIKI KE DUNIA DIGITAL. </motion.p>
                               <motion.p className='font-[NeueMontreal] mt-[20px] mb-[64px] p-5'
                                     initial={{ opacity: 0, translateY: 20 }}
                                     transition={{ duration: 1.25, ease: "easeInOut" }}

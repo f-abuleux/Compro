@@ -7,9 +7,7 @@ import Image from 'next/image';
 import {  motion } from 'framer-motion';
 
 
-const HamburgerMenu = (
-    { isOpen, handleHamburger }: { isOpen: boolean, handleHamburger: () => void }
-) => {
+const HamburgerMenu = ({ isOpen, handleHamburger } : { isOpen: boolean, handleHamburger: () => void }) => {
     const variants = {
         open: {
             y: 0,

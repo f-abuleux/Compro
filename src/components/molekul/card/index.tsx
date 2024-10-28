@@ -11,6 +11,26 @@ interface Product {
         page: string
 }
 
+interface RadioButton {
+        pertanyaan: string,
+        a: string,
+        b: string
+}
+
+
+export const RadioButton = ({ pertanyaan, a, b }: RadioButton) => {
+        return (
+                <div>
+                        <section>
+                                <p>{pertanyaan}</p>
+                                <div>
+                                        <input type="radio" name="" id="" >{a}</input>
+                                        <input type="radio" name="" id="" >{b}</input>
+                                </div>
+                        </section>
+                </div>
+        )
+}
 
 const CardProduct = ({ number, desc, page, name }: Product) => {
         const router = useRouter();
